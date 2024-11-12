@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Sour Gummy", sans-serif;
+            
+        }
+        body {
+            background-image: linear-gradient(#eb3349, #f45c43);
+            min-height: 100vh;
+            
+        }
+        .box {
+           width: 500px;
+           height: 500px;
+           padding: 50px 20px;
+           margin: 100px auto;
+           text-align: center;
+           background: white;
+        }
+
+        .box input[type='email'], .box input[type='password']{
+            margin-bottom: 15px;
+            padding: 15px 10px;
+            width: 100%;
+            background: #dfe6e9;
+            border: none;
+        
+        }
+
+        .box input[type='submit']{
+            padding: 20px;
+            width: 60%;
+            color: aliceblue;
+            background: #eb3349;
+            border: none;
+            border-radius: 20px;
+            font-weight: 1000;
+        
+        }
+        .box input[type='submit']:hover{
+            color: #74b9ff;
+            transition: 0.5s;
+        }
+        .box a{
+           display: inline-block; /*thẻ value phải dùng display*/
+            margin-bottom: 15px; /*chỗ này không bottom được*/
+            text-decoration: none;
+            color: grey;
+        }
+
+        .icon a{
+            display: inline-block;
+            margin: 10px;
+            height: 40px;
+            width: 40px;
+            background-color: #74b9ff;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+
+        }
+        .icon a:hover{
+            color: aquamarine;
+            transition: 0.5s;
+             transform: translateY(7px);
+        }
+        h1:hover{
+            color: aquamarine;
+            transition: 0.8s;
+        }
+
+  
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form> 
+        <h1>Sign in</h1><BR></BR>
+        <input type="email"placeholder='Enter your email'><br>
+        <input type="password"placeholder='Enter your password'><br>
+        <a href="#">Forgot your password?</a><br>
+        <input type="submit" value="SIGN IN"></form>
+
+        <div class="icon"> 
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+        <a href="#"><i class="fa-brands fa-viber"></i></a></div>
+    </div>
+</body>
+</html>
